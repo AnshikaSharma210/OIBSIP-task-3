@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    
+  background: url(bgimg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main{
+    height: 400px;
+    width: 50%;
+    margin: 10% 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition:transform 0.8s;
+}
+.main:hover{
+    transform: scale(1.03);
+}
+.headings{
+    font-size: 190%;
+    margin-bottom: 0;
+}
+.left{
+    background-color: #19dee9;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+form{
+    align-items: center;
+    margin: 5% 0;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 6% 0;
+    padding: 0 3%;
+}
+.second{
+    margin: 6% 0;
+    justify-content:space-evenly;
+}
+.third{
+    margin: 6% 0;
+    justify-content:space-evenly;
+}
+input, select{
+    padding: 1%;
+    margin: 1%;
+    border: none;
+    font-size: 80%;
+    font-weight: 200;
+}
+#degree, .unit{
+padding: 3%;
+padding-left: 1%;
+border-radius: 4px;
+background-color: #ffffff;
+color: black;
+font-size: 90%;
+font-weight: 500;
+}
+::placeholder{
+    color: black;
+}
+#convert{
+    border: none;
+    background-color: #dbc62b;
+    padding: 3%;
+    border-radius: 4px;
+    font-size: 90%;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+#convert:hover{
+    transform:scale(1.02);
+}
+.right{
+    background-color: #e9e9e9;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    border-radius: 4%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    background-color: #4e5454;
+    margin: 34% 12%;
+    padding: 10% 12%;
+    color: #fff;
+}
+.heading{
+    font-size:120%;
+    font-weight: 500;
+}
+#display{
+    font-size:150%;
+    font-weight: 500;
+}
+h3, p{
+    margin: 0;
+}
+@media screen and (max-width: 1024px)
+ {
+    .first, .second{
+        flex-direction: column;
+    }
+    .left, .right{
+        width: 50%;
+    }
+    #degree, .unit, #convert, .selecttext{
+        font-size:70%;
+    }
+}
+@media screen and (max-width: 768px){
+    .main{
+        flex-direction: column;
+        padding: 20px;
+        width: 70%;
+        margin: 10% 0 0 0;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .result{
+        height: 65%;
+        margin: 5% 12%;
+    }
+    .left{
+        border-radius: 4%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .right{
+    border-radius: 4%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    }
+    #degree, .unit, #convert, .selecttext{
+        font-size:60%;
+    }
+}
+@media screen and (max-width: 425px){
+    .main{
+        width: 90%;
+        margin: 10% 0 0 0;
+    }
+    #degree, .unit, #convert, .selecttext{
+        font-size:60%;
+    }
+    .result{
+        margin: 10% 12%;
+    }
+    .heading{
+        font-size:80%;
+    }
+}

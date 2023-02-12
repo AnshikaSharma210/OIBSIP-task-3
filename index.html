@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-F-C Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <div class="main">
+        <div class="left">
+            <h2 class="headings">K-F-C Converter</h2>
+          <form action="">
+            <div class="first">
+              <input type="number" name="degree" id="degree" placeholder="Enter degrees" required/>
+              <select name="selections" class="unit" id="initunit">
+                <option value="C">Celcius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+              </select>
+            </div>
+            <div class="second">
+              <label for="asking" class="selecttext">Select desired Unit:</label>
+              <select name="selections" class="unit" id="finunit">
+                <option value="C">Celcius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+              </select>
+            </div>
+            <div class="third">
+              <button type="submit" id="convert">Convert</button>
+            </div>
+          </form>
+        </div>
+        <div class="right">
+          <div class="result"><p class="heading">Result:</p><p id="display"></p></div>
+        </div>
+      </div>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>
